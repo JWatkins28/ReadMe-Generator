@@ -4,7 +4,7 @@ const genMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 const licenseChoices = ['MIT', 'Apache 2.0', 'GPLv3', 'ISC', 'none']
 
-// FUNCTION TO KICK OFF THE README GENERATION (SEE generateMarkdown.js for the rest)
+// FUNCTION TO KICK OFF THE README GENERATION (SEE generateMarkdown.js FOR THE REST OF THE STEPS)
 const writeToFile = (data) => 
 genMarkdown.generateMarkdown(data);
 
@@ -62,11 +62,11 @@ inquirer
   .then((data) => {
     const readmeContent = writeToFile(data);
     fs.writeFile('./output/README.md', readmeContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created README.md!')
+      err ? console.log(err) : console.log('Successfully created README.md in the output folder!')
     );
 
   });
 }
 
-// RUNNING THE PROGRAM 
+// RUNS THE PROGRAM ON LAUNCH
 init();
