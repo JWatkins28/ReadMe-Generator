@@ -1,20 +1,14 @@
-// TODO: Include packages needed for this application
+// VARIABLES FOR THE FUNCTIONS AND DEPENDENCIES
 const inquirer = require('inquirer');
 const genMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 const licenseChoices = ['MIT', 'Apache 2.0', 'GPLv3', 'ISC', 'none']
 
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
-
-// TODO: Create a function to write README file
+// FUNCTION TO KICK OFF THE README GENERATION (SEE generateMarkdown.js for the rest)
 const writeToFile = (data) => 
 genMarkdown.generateMarkdown(data);
 
-
-// TODO: Create a function to initialize app
+// INITIALIZATION FUNCTION
 function init() {
 inquirer
   .prompt([
@@ -57,26 +51,22 @@ inquirer
     {
       type: 'input',
       name: 'contributions',
-      message: 'How can people make contributions to your project?',
+      message: 'Give a brief description of how people can contribute to your project: ',
     },
     {
       type: 'input',
       name: 'testing',
-      message: 'What commands should be run to run tests?',
+      message: 'What commands should be run to run tests on the project?',
     },
   ])
   .then((data) => {
-
-    // console.log('\n\n-----------\n\n')
-
     const readmeContent = writeToFile(data);
-
-    fs.writeFile('generated.md', readmeContent, (err) =>
+    fs.writeFile('./output/README.md', readmeContent, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md!')
     );
 
   });
 }
 
-// Function call to initialize app
+// RUNNING THE PROGRAM 
 init();

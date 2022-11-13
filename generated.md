@@ -1,10 +1,10 @@
-# **zxckjslazd**
-  ![Github License](https://img.shields.io/badge/license-GPLv3-green)
+# **Testing SHIT**
+  ![Github License](https://img.shields.io/badge/license-MIT-green)
   
   
   ## **Description**
   
-  asd09128i3123
+  asdlkzxfc'asd9izxcl
   
   ---
   
@@ -29,26 +29,26 @@
   To install the needed dependencies, run the following commands:
   
   ```
-  zxcjswpadokiw90 
+  asdlkzxc;lkasdopiwadl;zkxc 
   ```
   
   ---
   
   ## **Usage**
   
-  zxcoikwa0-d
+  axciouawdl;kasczxopidawl;kasd
   
   ---
   
   ## **License**
   
-  This project is licensed under the GPLv3 license.
+  This project is licensed under the MIT license.
   
   ---
   
   ## **Contributions**
   
-  zxcw;adk;la
+  zxcopiwad;lakwdzxfopiasdl;k
   
   ---
   
@@ -57,12 +57,12 @@
   To test the project, run the following commands:
   
   ```
-  zxcopkiwaopdkzc
+  node index.js
   ```
   
   ---
   
   ## **Questions**
   
-  If you have any questions about the project or repo, contact me directly at asdkjzxc or open an issue on the repo. You can find my github profile with this project and others at [github.com/jwatkins28](https://github.com/jwatkins28/)
+  If you have any questions about the project or repo, contact me directly at justin@codingclass.com or open an issue on the repo. You can find my github profile with this project and others at [github.com/jwatkins28](https://github.com/jwatkins28/)
   
