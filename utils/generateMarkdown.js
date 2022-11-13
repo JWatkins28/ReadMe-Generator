@@ -1,26 +1,40 @@
+// NEEDED SO WE CAN ADD THE CODE BLOCK SECTIONS IN THE README
 const backticks = "```"
+// OTHER VARIABLES
+var licenseStatus = false
+var githubLicense = ``
 
+// RENDERING THE BADGE AT THE TOP OR LEAVING IT EMPTY IF CHOOSING "NONE"
 function renderLicenseBadge(license) {
   if (license == "none") {
     return githubLicense = ""
   } else {
+    licenseStatus = true
     renderLicenseLink(license)
   }
 }
 
+// CREATING THE LINK FOR THE BADGE
 function renderLicenseLink(license) {
   let licenseLink = `https://img.shields.io/badge/license-${license}-green`
-  return renderLicenseSection(licenseLink);
+  githubLicense = `![Github License](${licenseLink})`
+  renderLicenseSection(license);
+  return githubLicense
 }
 
-
+// FILLING OUT THE LICENSE SECTION
 function renderLicenseSection(license) {
-  return githubLicense = `![Github License](${license})`
+  if (licenseStatus) {
+    return licenseSection = `This project is licensed under the ${license} license.`
+  } else {
+    return licenseSection = `This project is using no license.`
+  }
 }
 
-
+// FUNCTION TO GENERATE THE README CONTENTS
 function generateMarkdown({ github, email, license, title, description, install, usage, contributions, testing }) {
   renderLicenseBadge(license);
+  renderLicenseSection(license);
   return `# **${title}**
   ${githubLicense}
   
@@ -65,17 +79,17 @@ function generateMarkdown({ github, email, license, title, description, install,
   
   ## **License**
   
-  This project is licensed under the ${license} license.
+  ${licenseSection}
   
   ---
   
-  ## **Contributions**
+  ## **Contributing**
   
   ${contributions}
   
   ---
   
-  ## **Testing**
+  ## **Tests**
   
   To test the project, run the following commands:
   
@@ -91,6 +105,7 @@ function generateMarkdown({ github, email, license, title, description, install,
   `;
 }
 
+// EXPORTING ALL THE FUNCTIONS ON THIS PAGE TO BE USED ON index.js
 module.exports = {
     generateMarkdown,
     renderLicenseBadge,
