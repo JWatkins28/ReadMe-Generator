@@ -3,9 +3,9 @@
 
 ## **Description**
 
-This project was the first challenge using NodeJS and NPM dependencies. It's a simple program designed to generate a ReadMe file in order to speed up development time by not having to create one from scratch for every project. In fact the base of this ReadMe was generated using this generator! 
+This project was the first challenge using NodeJS and NPM dependencies, specifical Inquirer v8.2.4. It's a simple program designed to generate a ReadMe file in order to speed up development time by not having to create one from scratch for every project. In fact the base of this ReadMe you're reading was generated using this generator! 
 
-Since this application uses the terminal and is not deployed, reference the "screenshots" or "video tutorial" section for instructions on how to use this. 
+Since this application uses the terminal and is not deployed, reference the "screenshots" and "video tutorial" section for instructions on how to use this. 
 
 GitHub Repo: [https://github.com/JWatkins28/ReadMe-Generator](https://github.com/JWatkins28/ReadMe-Generator)
 
