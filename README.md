@@ -68,7 +68,7 @@ Once finished you should see a message stating the ReadMe was created
 View your newly generated ReadMe in the output folder
 \
 ![ReadMe in the output folder](./assets/Step4.PNG)
-\
+
 
 ---
 
